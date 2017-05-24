@@ -1,0 +1,6 @@
+
+<span *ngIf="config.ButtonType=='Rounded' ||config.ButtonType=='Square'"><a href="#" [ngClass]="config.ButtonClass"> {{config.ButtonText}}</a></span>
+
+<div *ngIf="config.ButtonType=='Grouped'" [ngClass]="config.ButtonGroupClass">
+  <a href="#" [ngClass]="config.ButtonClass" *ngFor="let item of ButtonGroupList">{{item}}</a>
+</div>
